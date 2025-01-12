@@ -6,6 +6,6 @@ pip install selenium
 
 python input.py #to test valid_login credentials and all other edgecases
 
-python cart.py #to test cart and check empty cart bugs
+python cartest.py #to test cart and check empty cart bugs
 
-python checkout.py #to test empty cart checkouts and various other checkout bugs
+python checkout.py #to test empty cart checkouts and various other checkout and missing details
