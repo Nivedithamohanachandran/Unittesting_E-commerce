@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-01-12 21:03:42</p>
+                <p class='attribute'><strong>Duration: </strong>27.37 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.ProductFilterTests</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_filter_products_alphabetically</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <span class="active_option" data-test="active-option">...</span> is not clickable at point (886, 84). Other element would receive the click: <select class="product_sort_container" data-test="product-sort-container">...</select>
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AC9D80D5+2992373]
+	(No symbol) [0x00007FF6AC66BFD0]
+	(No symbol) [0x00007FF6AC50590A]
+	(No symbol) [0x00007FF6AC560F2E]
+	(No symbol) [0x00007FF6AC55E9CC]
+	(No symbol) [0x00007FF6AC55BBA6]
+	(No symbol) [0x00007FF6AC55AB01]
+	(No symbol) [0x00007FF6AC54CD40]
+	(No symbol) [0x00007FF6AC57F36A]
+	(No symbol) [0x00007FF6AC54C596]
+	(No symbol) [0x00007FF6AC57F580]
+	(No symbol) [0x00007FF6AC59F584]
+	(No symbol) [0x00007FF6AC57F113]
+	(No symbol) [0x00007FF6AC54A918]
+	(No symbol) [0x00007FF6AC54BA81]
+	GetHandleVerifier [0x00007FF6ACA36A2D+3379789]
+	GetHandleVerifier [0x00007FF6ACA4C32D+3468109]
+	GetHandleVerifier [0x00007FF6ACA40043+3418211]
+	GetHandleVerifier [0x00007FF6AC7CC78B+847787]
+	(No symbol) [0x00007FF6AC67757F]
+	(No symbol) [0x00007FF6AC672FC4]
+	(No symbol) [0x00007FF6AC67315D]
+	(No symbol) [0x00007FF6AC662979]
+	BaseThreadInitThunk [0x00007FFCEC5F259D+29]
+	RtlUserThreadStart [0x00007FFCED2AAF38+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Public\checkout.py", line 37, in test_filter_products_alphabetically
+    self.filter_products_alphabetically()  # Sort alphabetically A-Z
+  File "C:\Users\Public\checkout.py", line 25, in filter_products_alphabetically
+    driver.find_element(By.XPATH, "//*[contains(text(),'Name (A to Z)')]").click()
+  File "C:\Users\Rithish\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Rithish\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Rithish\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Rithish\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span class="active_option" data-test="active-option">...</span> is not clickable at point (886, 84). Other element would receive the click: <select class="product_sort_container" data-test="product-sort-container">...</select>
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AC9D80D5+2992373]
+	(No symbol) [0x00007FF6AC66BFD0]
+	(No symbol) [0x00007FF6AC50590A]
+	(No symbol) [0x00007FF6AC560F2E]
+	(No symbol) [0x00007FF6AC55E9CC]
+	(No symbol) [0x00007FF6AC55BBA6]
+	(No symbol) [0x00007FF6AC55AB01]
+	(No symbol) [0x00007FF6AC54CD40]
+	(No symbol) [0x00007FF6AC57F36A]
+	(No symbol) [0x00007FF6AC54C596]
+	(No symbol) [0x00007FF6AC57F580]
+	(No symbol) [0x00007FF6AC59F584]
+	(No symbol) [0x00007FF6AC57F113]
+	(No symbol) [0x00007FF6AC54A918]
+	(No symbol) [0x00007FF6AC54BA81]
+	GetHandleVerifier [0x00007FF6ACA36A2D+3379789]
+	GetHandleVerifier [0x00007FF6ACA4C32D+3468109]
+	GetHandleVerifier [0x00007FF6ACA40043+3418211]
+	GetHandleVerifier [0x00007FF6AC7CC78B+847787]
+	(No symbol) [0x00007FF6AC67757F]
+	(No symbol) [0x00007FF6AC672FC4]
+	(No symbol) [0x00007FF6AC67315D]
+	(No symbol) [0x00007FF6AC662979]
+	BaseThreadInitThunk [0x00007FFCEC5F259D+29]
+	RtlUserThreadStart [0x00007FFCED2AAF38+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_filter_products_by_price</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 27.37 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
